@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".ConfirmationActivity">
+
+    <!-- Judul Halaman -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Order"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Confirmation Nama Makanan -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Food Name : "
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/cFoodName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Food Name"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <!-- Confirmation Jumlah Porsi -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Number of Servings : "
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/cNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Number of Servings"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <!-- Confirmation Nama pengorder -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name : "
+            android:textSize="18sp"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/cName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Customer Name"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <!-- Input Catatan Tambahan -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Additional Notes : "
+            android:textSize="18sp"
+            android:layout_marginBottom="16dp"/>
+
+        <TextView
+            android:id="@+id/cNotes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Additional Notes"
+            android:textSize="18dp"/>
+    </LinearLayout>
+
+    <!-- Input Catatan Tambahan -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thanks for your order and please wait for delivering by nearest courier"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="8dp"/>
+
+    <Button
+        android:id="@+id/backtoMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to Menu" />
+
+</LinearLayout>
